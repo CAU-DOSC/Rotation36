@@ -14,7 +14,6 @@ trivial-->>   이윤주
 juggle-->>    이윤주
 blockswap-->> 김혜리
 reverse-->>   고재원
-clock-->>     고재원
 printhead-->> 김혜리
 printresult-->>송민준
 header--> 송민준
