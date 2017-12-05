@@ -3,17 +3,19 @@
 #include<stdlib.h>
 #include<string.h>
 #include<time.h>
-
+int n;
+int d;
+char *str;
 double time1;
 double time2;
 double time3;
 double time4;
 int gendata();
-void trivial(char*tri, int d, int n);
-void juggle(char *jug, int d, int n);
+void trivial(char*tri);
+void juggle(char *jug);
 void swap(char *str1, int i1, int i2, int d);
 void blockswap(char *str, int d, int n);
 void reverse(char *str1, int a, int b);
-void reversal(char *str1,int d,int n);
+void reversal(char *str1);
 void printhead();
-void printresult(int, int);
+void printresult();
