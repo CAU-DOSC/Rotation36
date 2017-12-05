@@ -15,10 +15,10 @@ int main() {
 				printhead();
 				count++;
 			}
-                 time1 = Time(trivial,d,n);
-                 time2 = Time(juggle,d,n);
-                 time3 = Time(blockswap,d,n);
-                 time4 = Time(reversal,d,n);
+                 time1 = Time(&trivial,d,n);
+                 time2 = Time(&juggle,d,n);
+                 time3 = Time(&blockswap,d,n);
+                 time4 = Time(&reversal,d,n);
                         printresult(d,n);
 		}
 	}
