@@ -73,7 +73,7 @@ void reversal(char *str1,int d,int n) {
 
 }
 
-double Time(void* func,int d, int n){
+/*double Time(void* func,int d, int n){
     time_t start, end;
     char* str = (char*)malloc(sizeof(char)*(n+1));
     void (*Funcptr)(str,int,int) = func;
@@ -81,7 +81,7 @@ double Time(void* func,int d, int n){
             Funcptr(str,d,n);
     end = clock();
             return (double)(end-start);
-}
+}*/
 
 
 void printhead() 
