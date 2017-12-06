@@ -46,7 +46,7 @@ void swap(char *str1, int i1, int i2, int d)
 	}
 }
 
-void blockswap(char *arr)
+void blockswap(char *str1)
 {
 	int i, j;
 	if (d == 0 || d == n)
@@ -57,16 +57,16 @@ void blockswap(char *arr)
 	{
 		if (i < j)
 		{
-			swap(arr, d - i, d + j - i, i);
+			swap(str1, d - i, d + j - i, i);
 			j -= i;
 		}
 		else
 		{
-			swap(arr, d - i, d, j);
+			swap(str1, d - i, d, j);
 			i -= j;
 		}
 	}
-	swap(arr, d - i, d, i);
+	swap(str1, d - i, d, i);
 }
 void reverse(char *str1, int a, int b) {
 	char temp;
