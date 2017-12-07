@@ -14,7 +14,7 @@ int gendata();
 void trivial(char*tri);
 void juggle(char *jug);
 void swap(char *str1, int i1, int i2, int d);
-void blockswap(char *str, int d, int n);
+void blockswap(char *str1);
 void reverse(char *str1, int a, int b);
 void reversal(char *str1);
 void printhead();
