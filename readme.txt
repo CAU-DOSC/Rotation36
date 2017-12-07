@@ -91,7 +91,7 @@ n이나 n과 d의 관계에 더 큰 영향을 받음을 확인 가능하다.
 
 함수            평균 효율        시간 복잡도
 Trivial	       	8.223           O(n*d)
-Juggle		       33953.862       O(n)
+Juggle          33953.862       O(n)
 Block Swap     	3172.554        O(n)
 Reverse	       	2726.835        O(n) 
 
