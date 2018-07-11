@@ -7,36 +7,19 @@
 int main() {
 	time_t start, end;
 	int count = 0;
+        int n,d;
 	while (1) {
-		if (gendata() == 0)break;
+                if (gendata(&n,&d) == 0)break;
 		else {
 			if (count == 0) {
 				printhead();
 				count++;
 			}
-			char *str1 = (char*)malloc(sizeof(char)*(n + 1));
-			strcpy(str1, str);
-			start = clock();
-			trivial(str1);
-			end = clock();
-			time1 = (double)(end - start) / CLOCKS_PER_SEC;
-			strcpy(str1, str);
-			start = clock();
-			juggle(str1);
-			end = clock();
-			time2 = (double)(end - start) / CLOCKS_PER_SEC;
-			strcpy(str1, str);
-			start = clock();
-			blockswap(str1, d, n);
-			end = clock();
-			time3 = (double)(end - start) / CLOCKS_PER_SEC;
-			strcpy(str1, str);
-			start = clock();
-			reversal(str1);
-			end = clock();
-			time4 = (double)(end - start) / CLOCKS_PER_SEC;
-			printresult();
-			free(str1);
+                 time1 = Time(trivial,n,d);
+                 time2 = Time(juggle,n,d);
+                 time3 = Time(blockswap,n,d);
+                 time4 = Time(reverse,n,d);
+                        printresult(n,d);
 		}
 	}
 	return 0;
